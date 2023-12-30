@@ -143,13 +143,7 @@
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Abilities.h" />
-    <ClInclude Include="Globals.h" />
-    <ClInclude Include="Hooks.h" />
-    <ClInclude Include="Includes.h" />
-    <ClInclude Include="Inventory.h" />
     <ClInclude Include="Memory.h" />
-    <ClInclude Include="Util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

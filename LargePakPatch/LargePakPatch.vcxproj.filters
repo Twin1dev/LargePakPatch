@@ -18,17 +18,8 @@
     <Filter Include="SDK\SDK">
       <UniqueIdentifier>{f140f6fb-5086-4ab2-acff-0d033be0fa31}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FN\Gameplay">
-      <UniqueIdentifier>{4dd4cb07-c317-4d33-81ed-8d84b46b0d4e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FN\Misc">
-      <UniqueIdentifier>{9dbe9e6d-bcab-45ca-a685-22d8cbbef317}</UniqueIdentifier>
-    </Filter>
     <Filter Include="FN\Memory">
       <UniqueIdentifier>{7189f826-9ce3-4743-a2b9-92f74e89fcd2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FN\Gameplay\Native">
-      <UniqueIdentifier>{16d78308-5559-4732-9355-2e692778f476}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,24 +30,6 @@
   <ItemGroup>
     <ClInclude Include="Memory.h">
       <Filter>FN\Memory</Filter>
-    </ClInclude>
-    <ClInclude Include="Includes.h">
-      <Filter>FN\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="Hooks.h">
-      <Filter>FN\Gameplay</Filter>
-    </ClInclude>
-    <ClInclude Include="Abilities.h">
-      <Filter>FN\Gameplay</Filter>
-    </ClInclude>
-    <ClInclude Include="Inventory.h">
-      <Filter>FN\Gameplay</Filter>
-    </ClInclude>
-    <ClInclude Include="Globals.h">
-      <Filter>FN\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="Util.h">
-      <Filter>FN\Misc</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

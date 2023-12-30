@@ -11,7 +11,7 @@
 MH_CreateHook((void*)(Address), Hook, (void**)(Og)); \
 MH_EnableHook((void*)(Address));
 
-#define CONSOLE;
+#define CONSOLE
 
 static __forceinline uintptr_t BaseAddress()
 {
