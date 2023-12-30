@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{b723a16e-f5a4-41bc-8573-ca7640614608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FN">
+      <UniqueIdentifier>{c143ada8-86d8-436d-8489-b613c6cca7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\SDK">
+      <UniqueIdentifier>{f140f6fb-5086-4ab2-acff-0d033be0fa31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FN\Gameplay">
+      <UniqueIdentifier>{4dd4cb07-c317-4d33-81ed-8d84b46b0d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FN\Misc">
+      <UniqueIdentifier>{9dbe9e6d-bcab-45ca-a685-22d8cbbef317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FN\Memory">
+      <UniqueIdentifier>{7189f826-9ce3-4743-a2b9-92f74e89fcd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FN\Gameplay\Native">
+      <UniqueIdentifier>{16d78308-5559-4732-9355-2e692778f476}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Memory.h">
+      <Filter>FN\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>FN\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>FN\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Abilities.h">
+      <Filter>FN\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>FN\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>FN\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>FN\Misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
