@@ -3,6 +3,8 @@
 
  Don't know why people are selling this.
 
+## [Download](https://github.com/Twin1dev/LargePakPatch/releases/latest)
+
 # When to Inject
 **This dll should be injected right after the loading screen ends when you start. right before the login screen.**
 
