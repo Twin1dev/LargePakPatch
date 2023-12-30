@@ -1,4 +1,8 @@
-#include "Includes.h"
+#include <Windows.h>
+
+#pragma comment(lib,"minhook/minhook.lib")
+#include "minhook/MinHook.h"
+
 #include <iostream>
 
 // Will Be Updated/Universal at a later date.
