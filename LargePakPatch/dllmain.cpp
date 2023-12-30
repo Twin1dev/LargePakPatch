@@ -7,6 +7,8 @@
 MH_CreateHook((void*)(Address), Hook, (void**)(Og)); \
 MH_EnableHook((void*)(Address));
 
+#define CONSOLE;
+
 static __forceinline uintptr_t BaseAddress()
 {
     return reinterpret_cast<uintptr_t>(GetModuleHandle(0));
@@ -20,13 +22,20 @@ __int64 __fastcall sub_7FF6F91707B0(__int64* a1, char a2, __int64 a3, char a4)
     return 0; 
 }
 
-void __fastcall RequestExit(char a1)
+void __fastcall RequestExit(unsigned __int8 a1)
 {
   
 }
 
 DWORD WINAPI Main(LPVOID)
 {
+#ifdef CONSOLE
+    AllocConsole();
+    FILE* fptr;
+    freopen_s(&fptr, "CONOUT$", "w+", stdout);
+
+    std::cout << "Using LargePakPatch by Twin1dev.\n";
+#endif
     MH_Initialize();
 
     CREATEHOOK(BaseAddress() + 0x163E3D0, sub_7FF6F91707B0, nullptr);
