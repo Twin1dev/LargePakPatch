@@ -12,12 +12,14 @@ __int64 __fastcall Hooks::UnsafeEnvironmentHk(__int64* a1, char a2, __int64 a3, 
 	return 0;
 }
 
-void Hooks::Create()
+bool Hooks::Create()
 {
-	MH_Initialize();
+	if (MH_Initialize() != MH_OK) return false;;
 
-	MH_CreateHook((void*)(Addresses::RequestExit), Hooks::RequestExitHk, nullptr);
-	MH_CreateHook((void*)(Addresses::UnsafeEnvironment), Hooks::UnsafeEnvironmentHk, nullptr);
+	if (MH_CreateHook((void*)(Addresses::RequestExit), Hooks::RequestExitHk, nullptr) != MH_OK) return false;
+	if (MH_CreateHook((void*)(Addresses::UnsafeEnvironment), Hooks::UnsafeEnvironmentHk, nullptr) != MH_OK) return false;
 
-	MH_EnableHook(MH_ALL_HOOKS);
+	if (MH_EnableHook(MH_ALL_HOOKS) != MH_OK) return false;
+
+	return true;
 }

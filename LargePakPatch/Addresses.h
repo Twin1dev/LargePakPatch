@@ -8,5 +8,5 @@ namespace Addresses
 	inline unsigned __int64 UnsafeEnvironment = 0;
 	inline unsigned __int64 RequestExit = 0;
 
-	void Init();
+	bool Init();
 }

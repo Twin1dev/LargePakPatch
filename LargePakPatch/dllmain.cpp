@@ -5,8 +5,17 @@
 
 DWORD WINAPI MainThread(LPVOID)
 {
-    Addresses::Init();
-    Hooks::Create();
+    if (!Addresses::Init())
+    {
+        MessageBoxA(0, "Addresses::Init()", "LargePakPatch", MB_OK | MB_ICONERROR);
+        exit(1);
+    }
+
+    if (!Hooks::Create())
+    {
+        MessageBoxA(0, "Hooks::Create()", "LargePakPatch", MB_OK | MB_ICONERROR);
+        exit(1);
+    }
     
     return 0;
 }
