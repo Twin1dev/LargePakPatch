@@ -110,8 +110,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;SKIDWIPE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -140,14 +141,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Addresses.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="Memory.cpp" />
-    <ClCompile Include="UE.cpp" />
+    <ClCompile Include="Hooks.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Addresses.h" />
     <ClInclude Include="Hooks.h" />
-    <ClInclude Include="Memory.h" />
-    <ClInclude Include="UE.h" />
+    <ClInclude Include="minhook\MinHook.h" />
+    <ClInclude Include="Offsets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="minhook\minhook.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -23,22 +23,22 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Memory.cpp">
-      <Filter>FN\NonHeader</Filter>
+    <ClCompile Include="Hooks.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UE.cpp">
-      <Filter>FN\NonHeader</Filter>
+    <ClCompile Include="Addresses.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Memory.h">
-      <Filter>FN\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="UE.h">
-      <Filter>FN\Header</Filter>
-    </ClInclude>
     <ClInclude Include="Hooks.h">
       <Filter>FN\Header</Filter>
     </ClInclude>
+    <ClInclude Include="Addresses.h" />
+    <ClInclude Include="minhook\MinHook.h" />
+    <ClInclude Include="Offsets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="minhook\minhook.lib" />
   </ItemGroup>
 </Project>
