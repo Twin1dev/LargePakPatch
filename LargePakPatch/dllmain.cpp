@@ -13,11 +13,6 @@ MH_EnableHook((void*)(Address));
 
 #define CONSOLE
 
-static __forceinline uintptr_t BaseAddress()
-{
-    return reinterpret_cast<uintptr_t>(GetModuleHandle(0));
-}
-
 __int64 (*sub_7FF6025DE3D0OG)(__int64* a1, unsigned __int8 a2, __int64 a3, char a4);
 
 __int64 __fastcall sub_7FF6F91707B0(__int64* a1, char a2, __int64 a3, char a4)
@@ -42,8 +37,10 @@ DWORD WINAPI Main(LPVOID)
 #endif
     MH_Initialize();
 
-    CREATEHOOK(BaseAddress() + 0x163E3D0, sub_7FF6F91707B0, nullptr);
-    CREATEHOOK(BaseAddress() + 0x1E6CC40, RequestExit, nullptr);
+    static auto Base = reinterpret_cast<uintptr_t>(GetModuleHandle(0));
+
+    CREATEHOOK(Base + 0x163E3D0, sub_7FF6F91707B0, nullptr);
+    CREATEHOOK(Base + 0x1E6CC40, RequestExit, nullptr);
     
     return 0;
 }
