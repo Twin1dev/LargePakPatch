@@ -1,9 +1,5 @@
 #pragma once
 
-#define CREATEHOOK(Address, Hook, Og) \
-MH_CreateHook((void*)(Address), Hook, (void**)(Og)); \
-MH_EnableHook((void*)(Address));
-
 namespace Hooks
 {
     void __fastcall RequestExitHk(unsigned __int8 a1);
