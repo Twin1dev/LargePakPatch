@@ -6,11 +6,9 @@ No download, build it yourself.
 
 ## FAQ
 
-**When should I inject the DLL?**
-
+### When should I inject the DLL?
 You should inject the DLL when the loading screen ends.
 
 
-**What builds are supported?**
-
+### What builds are supported?
 Currently it's only for 9.10, but we plan on making the project universal soon.
