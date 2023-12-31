@@ -141,9 +141,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="UE.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Hooks.h" />
     <ClInclude Include="Memory.h" />
+    <ClInclude Include="UE.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

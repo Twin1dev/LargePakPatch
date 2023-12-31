@@ -9,27 +9,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="SDK">
-      <UniqueIdentifier>{b723a16e-f5a4-41bc-8573-ca7640614608}</UniqueIdentifier>
-    </Filter>
     <Filter Include="FN">
       <UniqueIdentifier>{c143ada8-86d8-436d-8489-b613c6cca7fd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SDK\SDK">
-      <UniqueIdentifier>{f140f6fb-5086-4ab2-acff-0d033be0fa31}</UniqueIdentifier>
+    <Filter Include="FN\Header">
+      <UniqueIdentifier>{9c52bf27-d7aa-4802-abdf-97c8b68b0289}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FN\Memory">
-      <UniqueIdentifier>{7189f826-9ce3-4743-a2b9-92f74e89fcd2}</UniqueIdentifier>
+    <Filter Include="FN\NonHeader">
+      <UniqueIdentifier>{92e19b4e-648c-40e4-9615-df39f33eb826}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>FN\NonHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="UE.cpp">
+      <Filter>FN\NonHeader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Memory.h">
-      <Filter>FN\Memory</Filter>
+      <Filter>FN\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="UE.h">
+      <Filter>FN\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>FN\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
