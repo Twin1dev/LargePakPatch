@@ -14,7 +14,7 @@ __int64 __fastcall Hooks::UnsafeEnvironmentHk(__int64* a1, char a2, __int64 a3, 
 
 bool Hooks::Create()
 {
-	if (MH_Initialize() != MH_OK) return false;;
+	if (MH_Initialize() != MH_OK) return false;
 
 	if (MH_CreateHook((void*)(Addresses::RequestExit), Hooks::RequestExitHk, nullptr) != MH_OK) return false;
 	if (MH_CreateHook((void*)(Addresses::UnsafeEnvironment), Hooks::UnsafeEnvironmentHk, nullptr) != MH_OK) return false;
