@@ -1,12 +1,13 @@
 # LargePakPatch
- Fix for Corrupted Data on Paks for 9.10 (soon to be universal)
+Corrupted data fix for Fortnite 9.10, made by [Twin1](https://github.com/Twin1dev) and [parkie](https://github.com/mlodyskiny).
 
- Don't know why people are selling this.
+## Download
+No download, build it yourself.
 
-## [Download](https://github.com/Twin1dev/LargePakPatch/releases/latest)
+## FAQ
 
-# When to Inject
-**This dll should be injected right after the loading screen ends when you start. right before the login screen.**
+**When should I inject the DLL?**
+You should inject the DLL when the loading screen ends.
 
-**IF** you get issues with this dll, its probably the timing.
-
+**What builds are supported?**
+Currently it's only for 9.10, but we plan on making the project universal soon.
