@@ -3,7 +3,7 @@
 #include "Addresses.h"
 #include "Hooks.h"
 
-DWORD WINAPI Main(LPVOID)
+DWORD WINAPI MainThread(LPVOID)
 {
     Addresses::Init();
     Hooks::Create();
@@ -16,7 +16,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        CreateThread(0, 0, Main, 0, 0, 0);
+        CreateThread(0, 0, MainThread, 0, 0, 0);
         break;
     }
 
