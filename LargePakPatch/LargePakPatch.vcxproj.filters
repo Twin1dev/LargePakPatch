@@ -23,11 +23,11 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Hooks.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Addresses.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FN\NonHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks.cpp">
+      <Filter>FN\NonHeader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,7 +36,12 @@
     </ClInclude>
     <ClInclude Include="Addresses.h" />
     <ClInclude Include="minhook\MinHook.h" />
-    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="Offsets.h">
+      <Filter>FN\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Memcury.h">
+      <Filter>FN\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="minhook\minhook.lib" />

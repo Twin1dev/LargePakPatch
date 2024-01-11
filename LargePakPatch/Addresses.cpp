@@ -9,10 +9,10 @@ bool Addresses::Init()
 	Addresses::ModuleBase = *(unsigned __int64*)(__readgsqword(0x60) + 0x10);
 	if (!Addresses::ModuleBase) return false;
 
-	Addresses::RequestExit = ModuleBase + Offsets::RequestExit;
+	Addresses::RequestExit = Offsets::RequestExit;
 	if (!Addresses::RequestExit) return false;
 
-	Addresses::UnsafeEnvironment = ModuleBase + Offsets::UnsafeEnvironment;
+	Addresses::UnsafeEnvironment = Offsets::UnsafeEnvironment;
 	if (!Addresses::UnsafeEnvironment) return false;
 
 	return true;

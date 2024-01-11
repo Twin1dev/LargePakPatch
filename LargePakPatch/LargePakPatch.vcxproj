@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="Addresses.h" />
     <ClInclude Include="Hooks.h" />
+    <ClInclude Include="Memcury.h" />
     <ClInclude Include="minhook\MinHook.h" />
     <ClInclude Include="Offsets.h" />
   </ItemGroup>
