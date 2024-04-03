@@ -1,5 +1,5 @@
 # LargePakPatch
-Corrupted data fix for Fortnite 9.10, made by [Twin1](https://github.com/Twin1dev) and [parkie](https://github.com/mlodyskiny).
+Corrupted data fix for Fortnite, made by [Twin1](https://github.com/Twin1dev) and [parkie](https://github.com/mlodyskiny).
 
 ## Download
 No download, build it yourself.
