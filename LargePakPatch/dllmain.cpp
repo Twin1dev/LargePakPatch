@@ -1,7 +1,7 @@
 #include <Windows.h>
 
-#include "Addresses.h"
-#include "Hooks.h"
+#include "Patch/Public/Addresses.h"
+#include "Patch/Public/Hooks.h"
 
 DWORD WINAPI MainThread(LPVOID)
 {
@@ -20,14 +20,10 @@ DWORD WINAPI MainThread(LPVOID)
     return 0;
 }
 
-BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved)
 {
-    switch (ul_reason_for_call)
-    {
-    case DLL_PROCESS_ATTACH:
+    if (reason == DLL_PROCESS_ATTACH)
         CreateThread(0, 0, MainThread, 0, 0, 0);
-        break;
-    }
 
     return TRUE;
 }

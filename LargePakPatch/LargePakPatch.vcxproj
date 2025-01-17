@@ -143,16 +143,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Addresses.cpp" />
+    <ClCompile Include="Patch\Private\Addresses.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="Patch\Private\Finder.cpp" />
+    <ClCompile Include="Patch\Private\Hooks.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Addresses.h" />
-    <ClInclude Include="Hooks.h" />
-    <ClInclude Include="Memcury.h" />
+    <ClInclude Include="Patch\Public\Addresses.h" />
+    <ClInclude Include="Patch\Public\Finder.h" />
+    <ClInclude Include="Patch\Public\Hooks.h" />
+    <ClInclude Include="Vendor\Memcury.h" />
     <ClInclude Include="minhook\MinHook.h" />
-    <ClInclude Include="Offsets.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="minhook\minhook.lib" />

@@ -1,7 +1,7 @@
-#include "Hooks.h"
+#include "../Public/Hooks.h"
 
-#include "minhook/MinHook.h"
-#include "Addresses.h"
+#include "../../minhook/MinHook.h"
+#include "../Public/Addresses.h"
 
 void __fastcall Hooks::RequestExitHk(unsigned __int8 a1) {}
 

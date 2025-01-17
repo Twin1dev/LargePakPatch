@@ -12,10 +12,10 @@
     <Filter Include="FN">
       <UniqueIdentifier>{c143ada8-86d8-436d-8489-b613c6cca7fd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FN\Header">
+    <Filter Include="FN\Public">
       <UniqueIdentifier>{9c52bf27-d7aa-4802-abdf-97c8b68b0289}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FN\NonHeader">
+    <Filter Include="FN\Private">
       <UniqueIdentifier>{92e19b4e-648c-40e4-9615-df39f33eb826}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -23,25 +23,26 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Addresses.cpp">
-      <Filter>FN\NonHeader</Filter>
+    <ClCompile Include="Patch\Private\Addresses.cpp">
+      <Filter>FN\Private</Filter>
     </ClCompile>
-    <ClCompile Include="Hooks.cpp">
-      <Filter>FN\NonHeader</Filter>
+    <ClCompile Include="Patch\Private\Hooks.cpp">
+      <Filter>FN\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Patch\Private\Finder.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hooks.h">
-      <Filter>FN\Header</Filter>
+    <ClInclude Include="Patch\Public\Hooks.h">
+      <Filter>FN\Public</Filter>
     </ClInclude>
-    <ClInclude Include="Addresses.h" />
+    <ClInclude Include="Patch\Public\Addresses.h" />
     <ClInclude Include="minhook\MinHook.h" />
-    <ClInclude Include="Offsets.h">
-      <Filter>FN\Header</Filter>
+    <ClInclude Include="Vendor\Memcury.h">
+      <Filter>FN\Public</Filter>
     </ClInclude>
-    <ClInclude Include="Memcury.h">
-      <Filter>FN\Header</Filter>
-    </ClInclude>
+    <ClInclude Include="Patch\Public\Finder.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="minhook\minhook.lib" />
