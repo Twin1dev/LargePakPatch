@@ -4,6 +4,7 @@ Corrupted data fix for Fortnite (Universal), made by [Twin1](https://github.com/
 ## Download
 No download, build it yourself.
 
+## FAQ
 ### When should I inject the DLL?
 You should inject the DLL when the loading screen ends.
 
