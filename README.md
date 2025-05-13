@@ -2,7 +2,7 @@
 Corrupted data fix for Fortnite (Universal), made by [Twin1](https://github.com/Twin1dev) and [parkie](https://github.com/mlodyskiny).
 
 ## Download
-No download, build it yourself.
+[Download Here!](https://github.com/Twin1dev/LargePakPatch/releases/tag/latest)
 
 ## FAQ
 ### When should I inject the DLL?
