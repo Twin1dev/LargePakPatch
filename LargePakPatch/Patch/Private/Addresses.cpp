@@ -13,7 +13,10 @@ bool Addresses::Init()
 
 	Addresses::UnsafeEnvironment = Finder::FindUnsafeEnvironment();
 	
-	if (!Addresses::UnsafeEnvironment) return false;
+	if (!Addresses::UnsafeEnvironment) {
+		Addresses::UnsafeEnvironmentAlt = Finder::FindUnsafeEnvironmentAlt();
+		if (!Addresses::UnsafeEnvironmentAlt) return false;
+	}
 
 	return true;
 }
