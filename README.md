@@ -9,7 +9,7 @@ Corrupted data fix for Fortnite (Universal), made by [Twin1](https://github.com/
 You should inject the DLL when the loading screen ends.
 
 ### What builds are supported?
-Currently known supported builds are S5-S14, if any of these builds arent supported, make an issue and i will figure it out.
+Currently known supported builds are S5-S18, if any of these builds arent supported, make an issue and i will figure it out.
 
 ### I'm having an issue, where do I report it?
 https://github.com/Twin1dev/LargePakPatch/issues
