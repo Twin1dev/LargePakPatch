@@ -12,7 +12,17 @@ bool Hooks::Create()
 	if (MH_Initialize() != MH_OK) return false;
 
 	if (MH_CreateHook((void*)(Addresses::RequestExit), Hooks::RequestExitHk, nullptr) != MH_OK) return false;
-	if (MH_CreateHook((void*)(Addresses::UnsafeEnvironment), Hooks::UnsafeEnvironmentHk, nullptr) != MH_OK) return false;
+	if (Addresses::UnsafeEnvironmentAlt)
+	{
+		DWORD og;
+		void* address = (void*)Addresses::UnsafeEnvironmentAlt;
+		VirtualProtect(address, sizeof(unsigned char), PAGE_EXECUTE_READWRITE, &og);
+		*(unsigned char*)address = 0xC3;
+		VirtualProtect(address, sizeof(unsigned char), og, &og);
+	}
+	else {
+		if (MH_CreateHook((void*)(Addresses::UnsafeEnvironment), Hooks::UnsafeEnvironmentHk, nullptr) != MH_OK) return false;
+	}
 
 	if (MH_EnableHook(MH_ALL_HOOKS) != MH_OK) return false;
 

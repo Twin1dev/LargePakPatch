@@ -36,3 +36,7 @@ uint64_t Finder::FindUnsafeEnvironment()
 
 	return 0;
 }
+
+uint64_t Finder::FindUnsafeEnvironmentAlt() {
+	return Memcury::Scanner::FindPattern("E8 ? ? ? ? 48 8B 4D ? 48 85 C9 74 ? E8 ? ? ? ? 48 8B 4D ? 48 85 C9 74 ? E8 ? ? ? ? 4C 8B 7C 24 ? 4C 8B B4 24").RelativeOffset(1).Get();
+}
